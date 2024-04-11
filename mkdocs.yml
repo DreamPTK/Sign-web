@@ -1,4 +1,4 @@
-site_name: Taxes sign detection
+site_name: ThTaxSign
 
 
 repo_name: dreamptk
@@ -14,8 +14,8 @@ nav:
 
 theme:
   name: material
-  logo: img/GOD1.svg
-  favicon: img/GOD1.svg
+  logo: img/TH.png
+  favicon: img/TH.png
   features:
     - navigation.tabs
     - navigation.sections

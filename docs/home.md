@@ -1,4 +1,5 @@
 # Home
+![123](img/TH2.png)
 
 ## What is ThTaxSigns ?
 ThTaxSigns is a custom object detection model trained on the YOLOv5 architecture, specifically designed to detect road signs in Thailand. Leveraging the robustness and efficiency of YOLOv5, ThTaxSigns excels at accurately identifying various types of road signs commonly found on Thai roads, including regulatory signs, warning signs, construction signs, guidepost signs, soi/road signs and unidentified signs.
