@@ -5,9 +5,12 @@ Godream (Geo-dream) is a library that contain geospatial tools for RS&GIS analyz
 
 [(How to create new environment)](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands) -->
 
-## In Command line (CMD)
+## In Anaconda Prompt
+
+    cd your_directory
+
 ### Creating virtual environment
-Create new folder name: "sign_project". Put your environment name instead of "envName".
+Create new folder name: "sign_project" on your directory. Put your own environment name instead of "envName".
 
     mkdir sign_project
     cd sign_project
@@ -15,12 +18,12 @@ Create new folder name: "sign_project". Put your environment name instead of "en
 
 ### Activate your environment 
 
-    envName/Scripts/activate.bat
+    envName\Scripts\activate.bat
 
 
-### Installation
+<!-- ### Installation
 
-    pip install ThTaxSigns
+    pip install ThTaxSigns -->
 
 
 ### Launch Visual Studio Code (VScode)
@@ -29,7 +32,29 @@ Create new folder name: "sign_project". Put your environment name instead of "en
 
 ## In Visual Studio Code (VScode)
 
-### Import libraries
+open new terminal (command line)
+
+### Using Git clone to set up the model tools
+[how to set up git click >>](https://stackpython.medium.com/%E0%B8%97%E0%B8%B3%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%88%E0%B8%B1%E0%B8%81-git-github-%E0%B8%9E%E0%B8%A3%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%A3%E0%B9%88%E0%B8%A7%E0%B8%A1%E0%B8%81%E0%B8%B1%E0%B8%9A-vs-code-%E0%B9%80%E0%B8%9A%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%95%E0%B9%89%E0%B8%99-f848f41a39e9)
+
+```
+# clone yolov5
+git clone https://github.com/DreamPTK/yolov5.git
+
+# cd to yolov5
+cd yolov5
+
+# clone ThTaxSign
+git clone https://github.com/DreamPTK/ThTaxSigns.git
+
+# install
+pip install -qr requirements.txt  
+
+```
+
+
+
+<!-- ### Import libraries
 
 ```python
 import Godream
@@ -40,19 +65,6 @@ from Godream.plotimg import show_map
 
 ```python
 show_map()
-```
+``` -->
 
 
-<!-- ## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files. -->

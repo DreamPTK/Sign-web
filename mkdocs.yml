@@ -1,8 +1,8 @@
-site_name: ThTaxSign
+site_name: ThTaxSigns
 
 
-repo_name: dreamptk
-repo_url: https://github.com/dreamptk
+repo_name: DreamPTK/ThTaxSigns
+repo_url: https://github.com/DreamPTK/ThTaxSigns
 
 nav:
   - Home: 'home.md'
@@ -16,17 +16,29 @@ theme:
   name: material
   logo: img/TH.png
   favicon: img/TH.png
+  icon:
+    repo: fontawesome/brands/github
   features:
-    - navigation.tabs
     - navigation.sections
-    - navigation.tabs.sticky
+    # - navigation.tabs.sticky
     - toc.integrate
+    - toc.follow
     - navigation.top
+    - navigation.tabs
+    - navigation.prune
+    - navigation.footer
+    - navigation.tracking
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.indexes
     - search.suggest
+    - search.share
     - search.highlight
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+    - content.tooltips
+    
 
   language: en 
 
@@ -54,9 +66,11 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/DreamPTK
     - icon: fontawesome/brands/python
-      link: https://pypi.org/project/Godream/
+      link: https://pypi.org/user/dreamspareke/
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/pathakorn-usaha-114283244/
+
+
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -74,6 +88,20 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - md_in_html
+  - tables
+  - def_list
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.tilde
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+
 
 copyright: |
   &copy; 2024 <a href="https://github.com/DreamPTK"  target="_blank" rel="noopener">DreamPTK</a>
+
+
+
