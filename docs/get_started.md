@@ -52,7 +52,35 @@ pip install -qr requirements.txt
 
 ```
 
+open detect.ipynb on yolov5 directory
 
+### Import module and set up tools
+
+```
+%cd yolov5
+
+import utils
+display = utils.notebook_init()
+
+```
+
+### Detection
+
+```
+# use ThTaxSign model to detect 
+!python detect.py --img 640 --weights ThTaxSigns/data/model/ThTaxSigns.pt --conf 0.1  --source ThTaxSigns/data/images --project ThTaxSigns/data/output
+
+```
+
+### Display output
+
+```
+# display image
+display.Image(filename='ThTaxSigns/data/output/exp/testimg2.jpg', width=600)
+
+```
+
+![123](img/testimg2.jpg)
 
 <!-- ### Import libraries
 
