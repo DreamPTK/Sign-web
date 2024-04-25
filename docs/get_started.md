@@ -64,13 +64,30 @@ display = utils.notebook_init()
 
 ```
 
-### Detection
+### Detection Sign image
+
+`detect.py` run ThTaxSign model on images source and save the result to `output/exp`
 
 ```
 # use ThTaxSign model to detect 
-!python detect.py --img 640 --weights ThTaxSigns/data/model/ThTaxSigns.pt --conf 0.1  --source ThTaxSigns/data/images --project ThTaxSigns/data/output
+!python detect.py --img 640 --weights ThTaxSigns/data/model/ThTaxSigns.pt --conf 0.1  --source ThTaxSigns/data/images --project ThTaxSigns/data/output --save-crop
 
 ```
+ `--img`: inference size (height, width)
+
+`--weights`: model path or triton URL
+
+`--conf`: confidence threshold
+
+`--source`: file/dir/URL/glob/screen/webcam (source of the image)
+
+`--project`: save results to project/name
+
+`--save-crop`: save cropped prediction boxes
+
+[Other option read more !!!](https://github.com/ultralytics/yolov5/blob/master/detect.py)
+
+
 
 ### Display output
 
@@ -82,17 +99,14 @@ display.Image(filename='ThTaxSigns/data/output/exp/testimg2.jpg', width=600)
 
 ![123](img/testimg2.jpg)
 
-<!-- ### Import libraries
+### Display crop output
 
-```python
-import Godream
-from Godream.plotimg import show_map 
+```
+# display crop images
+display.Image(filename='ThTaxSigns/data/output/exp/crop', width=600)
+
 ```
 
-### Create an intercative map
 
-```python
-show_map()
-``` -->
 
 
