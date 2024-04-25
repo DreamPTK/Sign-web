@@ -1,7 +1,10 @@
 # YOLOv5
 ![123](img/yolov5-img.png)
 ## What is YOLOv5
-YOLOv5 is a prominent member of the YOLO (You Only Look Once) series of computer vision models developed by [Ultralytics](https://www.ultralytics.com/), widely employed for object detection tasks in various applications such as autonomous driving, surveillance, and image understanding. YOLOv5 distinguishes itself with its efficiency and accuracy, providing real-time object detection capabilities [More](https://docs.ultralytics.com/yolov5/).
+YOLOv5 is a prominent member of the YOLO (You Only Look Once) series of computer vision models developed by [Ultralytics](https://www.ultralytics.com/), widely employed for object detection tasks in various applications such as autonomous driving, surveillance, and image understanding. YOLOv5 distinguishes itself with its efficiency and accuracy, providing real-time object detection capabilities [More](https://docs.ultralytics.com/yolov5/). 
+
+<a href="https://colab.research.google.com/github/ultralytics/ultralytics/blob/main/examples/tutorial.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+<a href="https://www.kaggle.com/ultralytics/yolov8"><img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Open In Kaggle"></a>
 
 ## YOLOv5 Architecture
 [YOLOv5 Architecture](https://docs.ultralytics.com/yolov5/tutorials/architecture_description/#2-data-augmentation-techniques)
@@ -10,3 +13,5 @@ Object detection, a use case for which YOLOv5 is designed, involves creating fea
 
 
 ![123](img/yolov5-archi.png)
+
+
