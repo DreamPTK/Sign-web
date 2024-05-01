@@ -1,5 +1,7 @@
 # Get Started
 
+<a href="https://colab.research.google.com/drive/1dtr-IVnMX3Xy-vTf-p4Kmy2Zobk0CZtq?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+
 ## In Anaconda Prompt
 
     cd your_directory
@@ -34,16 +36,16 @@ open new terminal (command line)
 
 ```
 # clone yolov5
-git clone https://github.com/DreamPTK/yolov5.git
+!git clone https://github.com/DreamPTK/yolov5.git
 
 # cd to yolov5
-cd yolov5
+%cd yolov5
 
 # clone ThTaxSign
-git clone https://github.com/DreamPTK/ThTaxSigns.git
+!git clone https://github.com/DreamPTK/ThTaxSigns.git
 
 # install
-pip install -qr requirements.txt  
+%pip install -qr requirements.txt  
 
 ```
 
@@ -65,7 +67,7 @@ display = utils.notebook_init()
 
 ```
 # use ThTaxSign model to detect 
-!python detect.py --img 640 --weights ThTaxSigns/data/model/ThTaxSigns.pt --conf 0.1  --source ThTaxSigns/data/images --project ThTaxSigns/data/output --save-crop
+!python detect.py --img 640 --weights /content/yolov5/ThTaxSigns/data/model/model.pt --conf 0.5  --source /content/yolov5/ThTaxSigns/data/images --project /content/yolov5/ThTaxSigns/data/output --save-crop
 
 ```
  `--img`: inference size (height, width)
@@ -88,7 +90,7 @@ display = utils.notebook_init()
 
 ```
 # display image
-display.Image(filename='ThTaxSigns/data/output/exp/testimg2.jpg', width=600)
+display.Image(filename='/content/yolov5/ThTaxSigns/data/output/exp/testimg2.jpg', width=600)
 
 ```
 
