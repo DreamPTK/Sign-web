@@ -15,3 +15,7 @@ Object detection, a use case for which YOLOv5 is designed, involves creating fea
 ![123](img/yolov5-archi.png)
 
 
+### The benefits and potential of YOLOv5
+
+<iframe width="600" height="400" src="https://www.youtube.com/embed/iSXPMH3Wfig?si=-Vy69l7ZRy3CJbKd" title="Simpler, Smarter, Further: YOLOv5 and the Future of Visual AI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+

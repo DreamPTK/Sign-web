@@ -1,13 +1,13 @@
 # Get Started
 
-<a href="https://colab.research.google.com/drive/1dtr-IVnMX3Xy-vTf-p4Kmy2Zobk0CZtq?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+<a href="https://nbviewer.org/github/DreamPTK/yolov5/blob/master/detect.ipynb"><img src="https://user-images.githubusercontent.com/2791223/29387450-e5654c72-8294-11e7-95e4-090419520edb.png" alt="Open In nbviewer"></a>
 
-## In Anaconda Prompt
+## In Anaconda Prompt or the Terminal
 
     cd your_directory
 
-### Creating virtual environment
-Create new folder name: "sign_project" on your directory. Put your own environment name instead of "envName".
+### Creating new virtual environment
+Create new folder name: "sign_project" on your directory. Put your own environment name instead of "envName" or you can you this name.
 
     mkdir sign_project
     cd sign_project
@@ -23,39 +23,42 @@ Create new folder name: "sign_project" on your directory. Put your own environme
     pip install ThTaxSigns -->
 
 
-### Launch Visual Studio Code (VScode)
-
-    code .
-
-## In Visual Studio Code (VScode)
-
-open new terminal (command line)
+<!-- open new terminal (command line) -->
 
 ### Using Git clone to set up the model tools
 [how to set up git click >>](https://stackpython.medium.com/%E0%B8%97%E0%B8%B3%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%88%E0%B8%B1%E0%B8%81-git-github-%E0%B8%9E%E0%B8%A3%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%A3%E0%B9%88%E0%B8%A7%E0%B8%A1%E0%B8%81%E0%B8%B1%E0%B8%9A-vs-code-%E0%B9%80%E0%B8%9A%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%95%E0%B9%89%E0%B8%99-f848f41a39e9)
 
 ```
-# clone yolov5
-!git clone https://github.com/DreamPTK/yolov5.git
 
-# cd to yolov5
-%cd yolov5
+git clone https://github.com/DreamPTK/yolov5.git
 
-# clone ThTaxSign
-!git clone https://github.com/DreamPTK/ThTaxSigns.git
+```
+### Open Visual Studio Code (VScode)
 
-# install
-%pip install -qr requirements.txt  
+```
+code .
 
 ```
 
-open detect.ipynb on yolov5 directory
+
+## In Visual Studio Code (VScode)
+
+Open `detect.ipynb` on `yolov5` folder and
+
+Open New Terminal in Vscode (command Prompt)
+
+```
+cd yolov5
+pip install -qr requirements.txt  
+
+```
 
 ### Import module and set up tools
 
-```
-%cd yolov5
+In `detect.ipynb`
 
+```
+import os
 import utils
 display = utils.notebook_init()
 
@@ -63,11 +66,11 @@ display = utils.notebook_init()
 
 ### Detection Sign image
 
-`detect.py` run ThTaxSign model on images source and save the result to `output/exp`
+The `detect.py` run ThTaxSign model on images source and save the result to `output/exp` folders.
 
 ```
 # use ThTaxSign model to detect 
-!python detect.py --img 640 --weights /content/yolov5/ThTaxSigns/data/model/model.pt --conf 0.5  --source /content/yolov5/ThTaxSigns/data/images --project /content/yolov5/ThTaxSigns/data/output --save-crop
+!python detect.py --img 640 --weights ThTaxSigns/data/models.pt --conf 0.7  --source ThTaxSigns/data/images --project ThTaxSigns/data/output --save-crop
 
 ```
  `--img`: inference size (height, width)
@@ -82,7 +85,7 @@ display = utils.notebook_init()
 
 `--save-crop`: save cropped prediction boxes
 
-[Other option read more !!!](https://github.com/ultralytics/yolov5/blob/master/detect.py)
+[Other option you can read more !!!](https://github.com/ultralytics/yolov5/blob/master/detect.py)
 
 
 
@@ -99,10 +102,30 @@ display.Image(filename='/content/yolov5/ThTaxSigns/data/output/exp/testimg2.jpg'
 ### Display crop output
 
 ```
-# display crop images
-display.Image(filename='ThTaxSigns/data/output/exp/crop', width=600)
+from IPython.display import display, Image
+
+def display_images_from_folder(folder_path):
+    # List all files in the folder
+    files = os.listdir(folder_path)
+    
+    # Filter out only image files
+    image_files = [file for file in files if file.endswith(('.jpg', '.jpeg', '.png', '.gif'))]
+    
+    # Display each image
+    for image_file in image_files:
+        image_path = os.path.join(folder_path, image_file)
+        display(Image(filename=image_path, width=300))
 
 ```
+
+```
+folder_path = "E:/test/sign_project/yolov5/ThTaxSigns/data/output/exp/crops/unidentified_signs"
+
+display_images_from_folder(folder_path )
+
+```
+
+![123](img/testimg_crop.jpg)
 
 
 

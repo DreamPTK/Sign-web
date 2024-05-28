@@ -20,7 +20,7 @@ theme:
     repo: fontawesome/brands/github
   features:
     - navigation.sections
-    # - navigation.tabs.sticky
+    - navigation.tabs.sticky
     - toc.integrate
     - toc.follow
     - navigation.top
