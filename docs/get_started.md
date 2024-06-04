@@ -66,7 +66,9 @@ display = utils.notebook_init()
 
 ### Detection Sign image
 
-The `detect.py` run ThTaxSign model on images source and save the result to `output/exp` folders.
+The `detect.py` run ThTaxSign model on all images source of `data/images` folder and save the result to `output/exp` folders.
+
+This case study have two images source on `data/images` folder.
 
 ```
 # use ThTaxSign model to detect 
@@ -91,6 +93,8 @@ The `detect.py` run ThTaxSign model on images source and save the result to `out
 
 ### Display output
 
+First image
+
 ```
 # display image
 display.Image(filename='/content/yolov5/ThTaxSigns/data/output/exp/testimg2.jpg', width=600)
@@ -99,7 +103,21 @@ display.Image(filename='/content/yolov5/ThTaxSigns/data/output/exp/testimg2.jpg'
 
 ![123](img/testimg2.jpg)
 
+Second image
+
+```
+# display image
+display.Image(filename='/content/yolov5/ThTaxSigns/data/output/exp/testimg2.jpg', width=600)
+
+```
+
+![123](img/testimg3.jpg)
+
+
+
 ### Display crop output
+
+This tool will separatly crop the sign image output to several image files.
 
 ```
 from IPython.display import display, Image
@@ -127,6 +145,11 @@ display_images_from_folder(folder_path )
 
 ![123](img/testimg_crop.jpg)
 
+![123](img/testimg31.jpg)
+
+![123](img/testimg32.jpg)
+
+![123](img/testimg33.jpg)
 
 
-
+You can see these crop image outputs on `output/exp/crops/unidentified_signs` folder
