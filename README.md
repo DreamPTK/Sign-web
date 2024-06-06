@@ -1,5 +1,5 @@
 # Home
-![123](img/TH2.png)
+![123](docs/img/TH2.png)
 
 ## What is ThTaxSign ?
 ThTaxSign is a custom object detection model trained on the YOLOv5 architecture, specifically designed to detect road signs or municipal tax signs in Thailand. Leveraging the robustness and efficiency of YOLOv5, ThTaxSign excels at accurately identifying various types of road signs commonly found on Thai roads, including regulatory signs, warning signs, construction signs, guidepost signs, soi/road signs and unidentified signs.
@@ -10,7 +10,7 @@ The municipal tax sign detection in this model is categorized under "unidentifie
 
 
 
-![123](img/taximg.png)
+![123](docs/img/taximg.png)
 
 
 
@@ -20,33 +20,33 @@ The signs of this model are divided into six categories, including construction 
 
 - Construction sign
 
-![123](img/constraction-sign.jpg )
+![123](docs/img/constraction-sign.jpg )
 
 - Guide Post sign
 
-![123](img/guide.png)
+![123](docs/img/guide.png)
 
 - Regulatory sign
 
-![123](img/regulatory.png)
+![123](docs/img/regulatory.png)
 
 - Soi/Road sign
 
-![123](img/soi.jpg)
+![123](docs/img/soi.jpg)
 
 - warning sign
 
-![123](img/warning.png)
+![123](docs/img/warning.png)
 
 - unidentified sign
 
-![123](img/unidentify.png)
+![123](docs/img/unidentify.png)
 
 ## The purpose of this project
 
 This project was developed under the [GISTDA](https://www.gistda.or.th/home.php) (Geo-Informatics and Space Technology Development Agency, Thailand ) initiative to detect various Municipal tax signs such as shop signs, advertisements, and other signs from street view images.
 
-![123](img/unidentify2.png)
+![123](docs/img/unidentify2.png)
 
 
 
