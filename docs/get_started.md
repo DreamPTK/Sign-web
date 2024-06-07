@@ -72,7 +72,7 @@ This case study have two images source on `data/images` folder.
 
 ```
 # use ThTaxSign model to detect 
-!python detect.py --img 640 --weights ThTaxSigns/data/models.pt --conf 0.7  --source ThTaxSigns/data/images --project ThTaxSigns/data/output --save-crop
+!python detect.py --img 640 --weights ThTaxSigns/data/models.pt --conf 0.3  --source ThTaxSigns/data/images --project ThTaxSigns/data/output --save-crop
 
 ```
  `--img`: inference size (height, width)
@@ -114,6 +114,28 @@ display.Image(filename='/content/yolov5/ThTaxSigns/data/output/exp/testimg2.jpg'
 ![123](img/testimg3.jpg)
 
 
+Third image
+
+```
+# display image
+display.Image(filename='/content/yolov5/ThTaxSigns/data/output/exp/testimg4.jpg', width=600)
+
+```
+
+![123](img/testimg4.jpg)
+
+
+Forth image
+
+```
+# display image
+display.Image(filename='/content/yolov5/ThTaxSigns/data/output/exp/testimg5.jpg', width=600)
+
+```
+
+![123](img/testimg5.jpg)
+
+
 
 ### Display crop output
 
@@ -151,5 +173,26 @@ display_images_from_folder(folder_path )
 
 ![123](img/testimg33.jpg)
 
+![123](img/testimg41.jpg)
+
+![123](img/testimg42.jpg)
+
+![123](img/testimg51.jpg)
+
+![123](img/testimg52.jpg)
+
+![123](img/testimg53.jpg)
+
+![123](img/testimg54.jpg)
+
+![123](img/testimg55.jpg)
+
+![123](img/testimg56.jpg)
+
+![123](img/testimg57.jpg)
+
+![123](img/testimg58.jpg)
 
 You can see these crop image outputs on `output/exp/crops/unidentified_signs` folder
+
+
