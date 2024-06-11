@@ -93,45 +93,26 @@ This case study have two images source on `data/images` folder.
 
 ### Display output
 
-First image
-
 ```
-# display image
-display.Image(filename='/content/yolov5/ThTaxSigns/data/output/exp/testimg2.jpg', width=600)
+# Display image
+
+import glob
+from IPython.display import Image, display
+
+for imageName in glob.glob('ThTaxSigns/data/output/exp/*.jpg'): 
+    display(Image(filename=imageName))
+    print("\n")
 
 ```
 
 ![123](img/testimg2.jpg)
 
-Second image
-
-```
-# display image
-display.Image(filename='/content/yolov5/ThTaxSigns/data/output/exp/testimg2.jpg', width=600)
-
-```
 
 ![123](img/testimg3.jpg)
 
 
-Third image
-
-```
-# display image
-display.Image(filename='/content/yolov5/ThTaxSigns/data/output/exp/testimg4.jpg', width=600)
-
-```
-
 ![123](img/testimg4.jpg)
 
-
-Forth image
-
-```
-# display image
-display.Image(filename='/content/yolov5/ThTaxSigns/data/output/exp/testimg5.jpg', width=600)
-
-```
 
 ![123](img/testimg5.jpg)
 
@@ -142,26 +123,11 @@ display.Image(filename='/content/yolov5/ThTaxSigns/data/output/exp/testimg5.jpg'
 This tool will separatly crop the sign image output to several image files.
 
 ```
-from IPython.display import display, Image
+# Display all crop images
 
-def display_images_from_folder(folder_path):
-    # List all files in the folder
-    files = os.listdir(folder_path)
-    
-    # Filter out only image files
-    image_files = [file for file in files if file.endswith(('.jpg', '.jpeg', '.png', '.gif'))]
-    
-    # Display each image
-    for image_file in image_files:
-        image_path = os.path.join(folder_path, image_file)
-        display(Image(filename=image_path, width=300))
-
-```
-
-```
-folder_path = "E:/test/sign_project/yolov5/ThTaxSigns/data/output/exp/crops/unidentified_signs"
-
-display_images_from_folder(folder_path )
+for imageName in glob.glob('ThTaxSigns/data/output/exp/crops/unidentified_signs/*.jpg'): 
+    display(Image(filename=imageName,width=300))
+    print("\n")
 
 ```
 
@@ -193,6 +159,6 @@ display_images_from_folder(folder_path )
 
 ![123](img/testimg58.jpg)
 
-You can see these crop image outputs on `output/exp/crops/unidentified_signs` folder
+Finally, you can see these crop image outputs on `output/exp/crops/unidentified_signs` folder.
 
 
