@@ -30,7 +30,7 @@ Create new folder name: "sign_project" on your directory. Put your own environme
 
 ```
 
-git clone https://github.com/DreamPTK/yolov5.git
+git clone https://gitlab.gistda.or.th/Dreamspareke/yolov5.git
 
 ```
 ### Open Visual Studio Code (VScode)
