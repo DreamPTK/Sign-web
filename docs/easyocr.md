@@ -1,24 +1,26 @@
-# What os EasyOCR 
+# EasyOCR
+
+## What os EasyOCR 
 
 EasyOCR is a Python computer language Optical Character Recognition (OCR) module that is both flexible and easy to use. OCR technology is useful for a variety of tasks, including data entry automation and image analysis. It enables computers to identify and extract text from photographs or scanned documents.
 
 EasyOCR stands out for its dedication to making OCR implementation easier for developers. It’s made to be user-friendly even for people with no background in OCR or computer vision. Multiple language support, pre-trained text detection and identification models, and a focus on speed and efficiency in word recognition inside images are all provided by the library.
 
 
-# Supported Languages By EasyOCR
+## Supported Languages By EasyOCR
 
 EasyOCR is currently supporting 80+ languages with more languages in development. Supported languages with the code name are listed below:
 
 Abaza (abq), Adyghe (ady), Afrikaans (af), Angika (ang), Arabic (ar), Assamese (as), Avar (ava), Azerbaijani (az), Belarusian (be), Bulgarian (bg) , Bihari (bh), Bhojpuri (bho), Bengali (bn), Bosnian (bs), Simplified Chinese (ch_sim), Traditional Chinese (ch_tra), Chechen (che), Czech (cs), Welsh (cy), Danish (da), German (de), English (en), Spanish (es), Estonian (et), Persian (fa), Finnish (fi), French (fr), Irish (ga), Goan Konkani (gom), Hindi (hi), Croatian (hr), Hungarian (hu), Indonesian (id), Ingush (inh), Icelandic (is), Italian (it), Japanese (ja), Kabardian (kbd), Kannada (kn), Korean (ko), Kurdish (ku), Latin (la), Lak (lbe), Lezghian (lez), Lithuanian (lt), Latvian (lv), Magahi (mah), Maithili (mai), Maori (mi), Mongolian (mn), Marathi (mr), Malay (ms), Maltese (mt), Nepali (ne), Newari (new), Dutch (nl), Norwegian (no), Occitan (oc), Pali (pi), Polish (pl), Portuguese (pt), Romanian (ro), Russian (ru), Serbian (cyrillic) (rs_cyrillic), Serbian(latin) (rs_latin), Nagpuri (sck), Slovak (sk), Slovenian (sl), Albanian (sq), Swedish (sv), Swahili (sw), Tamil (ta), Tabassaran (tab), Telugu (te), Thai (th), Tajik (tjk), Tagalog (tl), Turkish (tr), Uyghur (ug), Ukranian (uk), Urdu (ur), Uzbek (uz), Vietnamese (vi)
 
 
-# How to use EasyOCR
+## How to use EasyOCR
 
-## Part of Command Prompt
+### Part of Command Prompt
 
 Set up your python environment before the Installation.
 
-### Install library
+#### Install library
 
 Defualt is only English.
 
@@ -28,7 +30,7 @@ pip install easyocr
 
 ```
 
-### Install library for Thai language
+#### Install library for Thai language
 
 ```python
 
@@ -36,11 +38,11 @@ pip install easyocr[Thai]
 
 ```
 
-## Part of code editor
+### Part of code editor
 
 like VScode or Jupyter notebook
 
-### Import library
+#### Import library
 
 ```python
 
@@ -55,7 +57,7 @@ plt.style.use('ggplot')
 
 ```
 
-### Input Observation
+#### Input Observation
 
 ```python
 
@@ -74,7 +76,7 @@ plt.show()
 
 ![123](img/textOCR3.png)
 
-### Text Extraction by using EasyOCR
+#### Text Extraction by using EasyOCR
 
 ```python
 
@@ -90,7 +92,7 @@ for (bbox, text, prob) in res:
 
 ![123](img/textOCR1.jpg)
 
-### Display result
+#### Display result
 
 ```python
 
@@ -126,6 +128,6 @@ pd.DataFrame(res, columns=['bbox', 'text', 'conf'])
 
 
 
-#### If you want to extract mutiple images files, Follow this nbviewer ⚠️
+##### If you want to extract mutiple images files, Follow this nbviewer ⚠️
 
 <a href="https://nbviewer.org/github/DreamPTK/ThTaxSigns/blob/main/easyocrs.ipynb"><img src="https://user-images.githubusercontent.com/2791223/29387450-e5654c72-8294-11e7-95e4-090419520edb.png" alt="Open In nbviewer"></a>
