@@ -72,7 +72,7 @@ plt.show()
 
 ```
 
-![.](img/textOCR3.png.jpg)
+![123](img/textOCR3.png)
 
 ### Text Extraction by using EasyOCR
 
@@ -88,7 +88,7 @@ for (bbox, text, prob) in res:
 
 ```
 
-![.](img/textOCR1.jpg)
+![123](img/textOCR1.jpg)
 
 ### Display result
 
@@ -118,9 +118,12 @@ pd.DataFrame(res, columns=['bbox', 'text', 'conf'])
 
 ```
 
-![.](img/textOCR2.jpg)
 
-![.](img/textOCR4.jpg)
+![123](img/textOCR2.jpg)
+
+
+![123](img/textOCR4.jpg)
+
 
 
 #### If you want to extract mutiple images files, Follow this nbviewer ⚠️
