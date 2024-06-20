@@ -119,10 +119,10 @@ pd.DataFrame(res, columns=['bbox', 'text', 'conf'])
 ```
 
 
-![123](img/textOCR2.jpg)
+![123](img/textOCR2.png)
 
 
-![123](img/textOCR4.jpg)
+![123](img/textOCR4.png)
 
 
 
