@@ -127,7 +127,5 @@ pd.DataFrame(res, columns=['bbox', 'text', 'conf'])
 ![123](img/textOCR4.png)
 
 
-
-#### If you want to extract mutiple images files, Follow this nbviewer ⚠️
-
+### If you want to extract text in mutiple images files, Follow this nbviewer ⚠️ 
 <a href="https://nbviewer.org/github/DreamPTK/ThTaxSigns/blob/main/easyocrs.ipynb"><img src="https://user-images.githubusercontent.com/2791223/29387450-e5654c72-8294-11e7-95e4-090419520edb.png" alt="Open In nbviewer"></a>
